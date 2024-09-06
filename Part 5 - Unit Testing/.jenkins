@@ -7,7 +7,7 @@ pipeline {
         PYTHON_PATH = "C:\\Users\\sumed\\AppData\\Local\\Programs\\Python\\Python311\\python.exe"
         PYTEST_PATH = "C:\\Users\\sumed\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\pytest.exe"
         SELENIUM_PATH = "C:\\Users\\sumed\\OneDrive\\Documents\\GitHub\\test-devops\\Part 5 - Unit Testing\\SELENIUM\\Testing\\runAllTestSuites.bat"
-        DOCKER_IMAGE_NAME = "code_gym_image"
+        DOCKER_IMAGE_NAME = "sumedhdongre/code-gym-image:v1.0"
         DOCKER_CONTAINER_NAME = "code_gym_container"
         //DOCKERHUB_REPO = "sanskar22003/code_gym_image:latest"
     }
