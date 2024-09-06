@@ -3,10 +3,10 @@ pipeline {
     
     environment {
         PROJECT_NAME = "ECommerce Application"
-        REPO_PATH = "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\first pipieline@2"
-        PYTHON_PATH = "C:\\Users\\sansk\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
-        PYTEST_PATH = "C:\\Users\\sansk\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\pytest.exe"
-        SELENIUM_PATH = "C:\\Users\\sansk\\Downloads\\CodeGym-main\\Part 5 - Unit Testing\\SELENIUM\\Testing\\runAllTestSuites.bat"
+        REPO_PATH = "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\test-pipeline-webhooks-updates@2"
+        PYTHON_PATH = "C:\\Users\\sumed\\AppData\\Local\\Programs\\Python\\Python311\\python.exe"
+        PYTEST_PATH = "C:\\Users\\sumed\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\pytest.exe"
+        SELENIUM_PATH = "C:\\Users\\sumed\\OneDrive\\Documents\\GitHub\\test-devops\\Part 5 - Unit Testing\\SELENIUM\\Testing\\runAllTestSuites.bat"
         DOCKER_IMAGE_NAME = "code_gym_image"
         DOCKER_CONTAINER_NAME = "code_gym_container"
         //DOCKERHUB_REPO = "sanskar22003/code_gym_image:latest"
@@ -17,7 +17,7 @@ pipeline {
             steps {
                 echo "Project Name: ${env.PROJECT_NAME}"
                 ws("${env.REPO_PATH}") {
-                    git branch: 'main', credentialsId: '65fd2953-20c8-47ac-90a5-de4ab6edf5a', url: 'https://github.com/sanskar22003/CodeGym.git'
+                    git branch: 'main', credentialsId: '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', url: 'https://github.com/SumedhDongre031/test-devops.git'
                 }
             }
         }
